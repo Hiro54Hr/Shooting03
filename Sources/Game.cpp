@@ -6,10 +6,9 @@
 // TODO: 砲台を青い壁に沿って上下に動かす。(C)(実装：HW16A001　青葉拓希)
 // TODO: 弾のスピードを速くし、弾が画面右端を通り越したら再度発射可能にする。(D)(実装:HW16A168 船島 大喜)
 // TODO: スコアのサイズを大きくする。(E)(HW16A093 島村 幸佑)
-// TODO: スコアを100点ずつ加算するようにし、5桁の表示に変える。(F)
+// TODO: スコアを100点ずつ加算するようにし、5桁の表示に変える。(F)(HW16A093 島村 幸佑)
 // TODO: PlayBGM()関数を使って、BGMを再生する。(G)(実装:HW16A168 船島 大喜)
 // TODO: PlaySE()関数を使って、弾の発射時とターゲットに当たった時にSEを再生する。(H)(実装:HW16A006 池田 仁基)
-
 
 Vector2 cloudPos;       //!< 雲の位置
 Vector2 cannonPos;      //!< 砲台の位置
@@ -94,7 +93,7 @@ void Update()
 
     // スコアの描画
     SetFont("nicoca_v1.ttf", 80.0f);
-    DrawText(FormatString("%02d", score), Vector2(-319, 199), Color::black);
-    DrawText(FormatString("%02d", score), Vector2(-320, 200), Color::white);
+    DrawText(FormatString("%02d", score), Vector2(-309, 169), Color::black);
+    DrawText(FormatString("%02d", score), Vector2(-310, 170), Color::white);
 }
 
