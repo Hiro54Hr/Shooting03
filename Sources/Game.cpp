@@ -1,7 +1,7 @@
 #include "Game.hpp"
 
 
-// TODO: 砲台の位置を画面左に、ターゲットの位置を画面右に移動させる。(A)
+// TODO: 砲台の位置を画面左に、ターゲットの位置を画面右に移動させる。(A)(実装：HW16A001　青葉拓希)
 // TODO: 雲の位置を左から右に動かす。見えなくなったら左端に戻す。(B)
 // TODO: 砲台を青い壁に沿って上下に動かす。(C)(実装：HW16A001　青葉拓希)
 // TODO: 弾のスピードを速くし、弾が画面右端を通り越したら再度発射可能にする。(D)(実装:HW16A168 船島 大喜)
@@ -23,8 +23,8 @@ int     gunmove;        //!< 大砲の移動
 void Start()
 {
     cloudPos = Vector2(-320, 100);
-    cannonPos = Vector2(-80, -150);
-    targetRect = Rect(80, -140, 40, 40);
+    cannonPos = Vector2(-280, -150);
+    targetRect = Rect(250, -140, 40, 40);
     bulletPos.x = -999;
     score = 0;
     PlayBGM("bgm_maoudamashii_8bit07.mp3");
